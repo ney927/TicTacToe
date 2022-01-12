@@ -32,6 +32,29 @@ ol, ul {
   width: 34px;
 }
 
+.boldSquare {
+  background: rgba(30, 255, 0, 0.418);
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  animation: blinkingBackground 2s infinite;
+}
+
+@keyframes blinkingBackground{
+  0%		{ background-color: rgba(30, 255, 0, 0.418);}
+  25%		{ background-color: #ffffff;}
+  50%		{ background-color: rgba(30, 255, 0, 0.418);}
+  75%		{ background-color: #ffffff;}
+}
+
 .square:focus {
   outline: none;
 }
